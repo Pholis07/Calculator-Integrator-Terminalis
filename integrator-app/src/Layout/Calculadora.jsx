@@ -133,8 +133,8 @@ export default function Calculadora() {
     }
 
     return (
-        <section className="flex justify-center items-center h-screen flex-col bg-rose-950">
-            <div className="size-3/5 bg-mauve-950 rounded-4xl shadow 2xl">
+        <section className="flex justify-center items-center min-h-screen flex-col bg-rose-950 py-10">
+            <div className="w-3/5 bg-[#1e1e2e] rounded-4xl shadow 2xl">
                 <div className="flex flex-col items-center m-10 relative">
                     <h2 className='text-white font-semibold text-lg mb-5'>
                         Ingrese el metodo por el que quiere aproximar:
@@ -142,7 +142,7 @@ export default function Calculadora() {
 
                     <button
                         onClick={() => setAbierto(!abierto)}
-                        className="relative p-3 inline-flex items-center justify-center gap-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-200"
+                        className="relative p-3 inline-flex items-center justify-center gap-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-[#ff0073] to-[#fc0000] hover:text-white focus:ring-4 focus:outline-none focus:ring-[#ff0073]/40"
                         type="button"
                     >
                         {metodoSeleccionado.titulo}
@@ -165,7 +165,7 @@ export default function Calculadora() {
                                         <button
                                             onClick={() => seleccionarMetodo(item.key)}
                                             className={`flex items-start gap-3 w-full p-3 rounded-lg cursor-pointer transition-colors text-left ${metodoActivo === item.key
-                                                ? 'bg-mauve-950 border border-rose-800'
+                                                ? 'bg-[#1e1e2e] border border-rose-800'
                                                 : 'hover:bg-[#334155]/50'
                                                 }`}
                                         >
@@ -259,7 +259,7 @@ export default function Calculadora() {
 
                         <button
                             type="submit"
-                            className="p-3 rounded-lg text-sm font-medium text-white bg-gradient-to-br from-purple-500 to-pink-500 focus:ring-4 focus:outline-none focus:ring-purple-200"
+                            className="p-3 rounded-lg text-sm font-medium text-white bg-gradient-to-br from-[#ff0073] to-[#fc0000] focus:ring-4 focus:outline-none focus:ring-[#ff0073]/40"
                         >
                             Calcular
                         </button>
