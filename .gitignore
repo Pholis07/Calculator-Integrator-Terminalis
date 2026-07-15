@@ -1,0 +1,5 @@
+.idea/
+.impeccable/
+node_modules/
+*.local
+.DS_Store
